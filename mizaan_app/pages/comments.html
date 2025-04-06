@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comments | Mizān</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <!-- Top navbar -->
+    <header class="navbar">
+      <h2>Mizān</h2>
+    </header>
+
+    <!-- Page layout: Sidebar + Main content -->
+    <div class="dashboard-layout">
+      <!-- Sidebar navigation -->
+      <aside class="sidebar">
+        <ul>
+          <li><a href="addAssessment.html">Add Assessment</a></li>
+          <li><a href="assessment.html">Get Assessments </a></li>
+          <li><a href="addComments.html">Add Course Comment</a></li>
+          <li><a href="comments.html">Get Course Comments </a></li>
+        </ul>
+      </aside>
+
+      <!-- Main content area -->
+      <main class="main-content">
+        <h3>Course Comments</h3>
+        <p>filter by course name or show all comments</p>
+
+        <!-- Comment Form -->
+        <form class="comment-form">
+          <label for="course">filter by course</label>
+          <select id="course" name="course" required>
+            <option value="all">all</option>
+            <option value="course1">Course 1</option>
+            <option value="course2">Course 2</option>
+            <option value="course3">course 3</option>
+          </select>
+        </form>
+
+        <!-- Comment List -->
+        <div class="comment-list">
+          <!-- Example comments (static for now) -->
+          <div class="comment-card">
+            <h4>Too Many Assignments</h4>
+            <p>The assignments in Week 5 are overlapping with other courses.</p>
+            <span class="comment-meta">Posted by Student - Mar 25, 2025</span>
+          </div>
+
+          <div class="comment-card">
+            <h4>Instructor Response</h4>
+            <p>
+              Thanks for the feedback. I will consider shifting one of the
+              deadlines.
+            </p>
+            <span class="comment-meta"
+              >Posted by Instructor - Mar 26, 2025</span
+            >
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Mizān</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <!-- Top navbar -->
+    <header class="navbar">
+      <h2>Mizān</h2>
+    </header>
+
+    <!-- Dashboard layout: Sidebar + Main content -->
+    <div class="dashboard-layout">
+      <!-- Sidebar navigation -->
+      <aside class="sidebar">
+        <ul>
+          <li><a href="addAssessment.html">Add Assessment</a></li>
+          <li><a href="assessment.html">Get Assessments </a></li>
+          <li><a href="addComments.html">Add Course Comment</a></li>
+          <li><a href="comments.html">Get Course Comments </a></li>
+        </ul>
+      </aside>
+
+      <!-- Main dashboard content -->
+      <main class="main-content">
+        <h3>Welcome, Instructor!</h3>
+
+        <!-- Instructor-Only Section: Add Assessment Form -->
+        <h3>Add New Assessment</h3>
+
+        <form class="assessment-form">
+          <label for="course">course</label>
+          <select id="course" name="course" required>
+            <option value="">-- Select course --</option>
+            <option value="course1">Course 1</option>
+            <option value="course2">Course 2</option>
+            <option value="course3">course 3</option>
+          </select>
+
+          <label for="type">Assessment Type</label>
+          <select id="type" name="type" required>
+            <option value="">-- Select Type --</option>
+            <option value="Homework">Homework</option>
+            <option value="Quiz">Quiz</option>
+            <option value="Midterm">Midterm</option>
+            <option value="Final">Final</option>
+            <option value="Project">Project</option>
+          </select>
+
+          <label for="title">Title</label>
+          <input
+            type="text"
+            id="title"
+            name="title"
+            placeholder="e.g. Midterm 1"
+            required
+          />
+
+          <label for="due-date">Due Date</label>
+          <input type="date" id="due-date" name="due-date" required />
+
+          <label for="hours">Effort Hours</label>
+          <input type="number" id="hours" name="hours" min="1" required />
+
+          <label for="weight">Weight (%)</label>
+          <input
+            type="number"
+            id="weight"
+            name="weight"
+            min="1"
+            max="100"
+            required
+          />
+
+          <button type="submit">Add Assessment</button>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

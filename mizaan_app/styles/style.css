@@ -1,0 +1,378 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+}
+
+.login-header {
+  text-align: center;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.top-video video {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  flex-wrap: wrap;
+}
+
+.side-images {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.side-images img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.login-form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.login-form input,
+.login-form select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.login-form button {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.bottom-video {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.bottom-video video {
+  width: 480px;
+  height: auto;
+  max-width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/* Navbar styles */
+.navbar {
+  background-color: #007bff;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+/* Dashboard layout */
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 220px;
+  background-color: #f4f4f4;
+  padding: 1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 1rem;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Main content area */
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.content-placeholder {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border: 1px dashed #ccc;
+  border-radius: 6px;
+}
+
+
+/* Style sidebar links to look like clickable boxes */
+.sidebar a {
+  display: block;
+  background-color: #fff;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  /* This makes the corners slightly round */
+  border: 1px solid #ddd;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar a:hover {
+  background-color: #e6f0ff;
+  border-color: #007bff;
+  color: #007bff;
+}
+
+
+/*   add assesment for the instrcutor ------------------------------------- */
+/* Assessment Form Styles */
+.assessment-form {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  max-width: 500px;
+  margin-top: 2rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.assessment-form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.assessment-form input,
+.assessment-form select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.assessment-form button {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/*   add assesment for the instrcutor  done----------------------------*/
+
+
+
+/* Placeholder for calendar layout-------------------------------- */
+.calendar-placeholder {
+  height: 400px;
+  background-color: #f1f1f1;
+  margin-top: 2rem;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-style: italic;
+}
+
+/* Sync button styling */
+.sync-button {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.25rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.sync-button:hover {
+  background-color: #218838;
+}
+
+/* Placeholder for calendar layout done----------------------------*/
+
+
+
+/* Comment form styling -------------------------------------- */
+.comment-form {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+  max-width: 600px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.comment-form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.comment-form input,
+.comment-form select,
+.comment-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.comment-form button {
+  margin-top: 1.5rem;
+  padding: 0.75rem;
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Comment list */
+.comment-list {
+  margin-top: 2rem;
+}
+
+.comment-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.comment-card h4 {
+  margin: 0 0 0.5rem;
+}
+
+.comment-meta {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Comment form styling done------------------------------- */
+
+
+
+/* Report Table ---------------------------------*/
+.report-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.report-table th,
+.report-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.report-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.report-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Report Table done ---------------------------------*/
+
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+
+.btns button {
+  padding: 0.5rem 1rem;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btns button:hover {
+  background-color: #0056b3;
+}
+
+.btns .update-btn {
+  background-color: #28a745;
+}
+
+.btns .update-btn:hover {
+  background-color: #218838;
+}
+
+.btns .delete-btn {
+  background-color: #dc3545;
+}
+
+.btns .delete-btn:hover {
+  background-color: #c82333;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>assessments | Mizān</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <!-- Top navbar -->
+    <header class="navbar">
+      <h2>Mizān</h2>
+    </header>
+
+    <!-- Page layout: Sidebar + Main content -->
+    <div class="dashboard-layout">
+      <!-- Sidebar navigation -->
+      <aside class="sidebar">
+        <ul>
+          <li><a href="addAssessment.html">Add Assessment</a></li>
+          <li><a href="assessment.html">Get Assessments </a></li>
+          <li><a href="addComments.html">Add Course Comment</a></li>
+          <li><a href="comments.html">Get Course Comments </a></li>
+        </ul>
+      </aside>
+
+      <!-- Main content area -->
+      <main class="main-content">
+        <h3>Course assessments</h3>
+        <p>filter by course name or show all assessments</p>
+
+        <!-- filter Form -->
+        <form class="assessment-form">
+          <label for="course">filter by course</label>
+          <select id="course" name="course" required>
+            <option value="all">all</option>
+            <option value="course1">Course 1</option>
+            <option value="course2">Course 2</option>
+            <option value="course3">course 3</option>
+          </select>
+        </form>
+
+        <!-- Assessment List -->
+        <div class="comment-list">
+          <!-- Example Assessments (static for now) -->
+          <div class="comment-card">
+            <h4>course: course 1</h4>
+            <h4>Title: Midterm 1</h4>
+            <h4>Effort Hours: 10</h4>
+            <h4>Weight: 20</h4>
+            <h4>Type: Midterm</h4>
+            <span class="comment-meta">Due date: 2025-03-25</span>
+            <div class="btns">
+              <button class="update-btn">Update</button>
+              <button class="delete-btn">Delete</button>
+            </div>
+          </div>
+
+          <div class="comment-card">
+            <h4>course: course 2</h4>
+            <h4>Title: Project 1</h4>
+            <h4>Effort Hours: 15</h4>
+            <h4>Weight: 30</h4>
+            <h4>Type: Project</h4>
+            <span class="comment-meta">Due date: 2025-04-10</span>
+            <div class="btns">
+              <button class="update-btn">Update</button>
+              <button class="delete-btn">Delete</button>
+            </div>
+          </div>
+
+          <div class="comment-card">
+            <h4>course: course 3</h4>
+            <h4>Title: Final</h4>
+            <h4>Effort Hours: 12</h4>
+            <h4>Weight: 25</h4>
+            <h4>Type: Final</h4>
+            <span class="comment-meta">Due date: 2025-05-15</span>
+            <div class="btns">
+              <button class="update-btn">Update</button>
+              <button class="delete-btn">Delete</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
